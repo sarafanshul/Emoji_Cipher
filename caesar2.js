@@ -2,6 +2,7 @@
 function caesar() {
     var num = parseInt(document.getElementById("num").value)
     var txt = document.getElementById("txt").value;
+    txt = txt.trim();
     var x = [];
     num %= 26
     if (num >= -26 && num <= 26) {
@@ -95,6 +96,7 @@ function getSymbols(string) {
 function decaesar() {
     var num = parseInt(document.getElementById("num").value) * -1
     var out = document.getElementById("txt").value;
+    out = out.trim();
     var x = [];
     const dict = {
         '😀': 'a',
