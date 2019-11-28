@@ -48,3 +48,12 @@ input:valid~label {
 button{
     margin: 5%;
 }
+
+footer{
+    /* height: 50px; */
+    position: relative;
+    bottom: 0;
+}
+/* p{
+  font-style: italic;
+} */
