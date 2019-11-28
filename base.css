@@ -1,0 +1,50 @@
+body{
+    background-color: #FFE338;
+}
+form {
+  margin: 100px;
+}
+.input-field {
+  position: relative;
+  width: 250px;
+  height: 44px;
+  line-height: 44px;
+  
+}
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #111;
+  transition: 0.2s all;
+  cursor: text;
+}
+input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #111;
+  box-shadow: none;
+  color: #111;
+  background-color: #FFE338;
+}
+input:invalid {
+  outline: 0;
+  /* // color: #ff2300; */
+  /* //   border-color: #ff2300; */
+}
+input:focus,
+input:valid {
+  border-color: #00dd22;
+}
+input:focus~label,
+input:valid~label {
+  font-size: 14px;
+  top: -24px;
+  color: #00dd22;
+}
+button{
+    margin: 5%;
+}

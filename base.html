@@ -14,21 +14,37 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="icon" href="icon.png" type="image/gif">
+    <link rel="stylesheet" href="base.css">
     
     <title> Emoji Cipher :) </title>
 </head>
 
 <body>
-    <h1><center>Work in progress!</center></h1>
+    <h1><center>Emoji Cipher &#128515;</center></h1>
+    <center>
+        <!-- <h3> Enter the Key 🔑 </h3>   -->
+        <!-- <input type="tel" id="num">  -->
+        <form action="">
+            <div class="input-field">
+                <input type="tel" id="num" required />
+                <label for="name">Key 🔑</label>
+            </div>
+        </form>
+        <!-- <h3> to encode / decode:</h3>   -->
+        <!-- <input type="text" id="txt">   -->
+        <form action="">
+            <div class="input-field">
+                <input type="text" id="txt" required />
+                <label for="name">Message &#9997;</label>
+            </div>
+        </form>
+    
+        <button type="button" class="btn btn-success" onclick="caesar()">Encode</button>
+        <button type="button" class="btn btn-info" onclick="decaesar()">Decode</button>
+    </center>
+
     <footer class="bg-dark text-center text-light"> &copy; &diam; Anshul Saraf &diam;</footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script>
-        $(window).on("load", function () {
-            $(".loader-wrapper").fadeOut("slow");
-        });
-    </script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -38,6 +54,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="caesar2.js"></script>
 </body>
 
 </html>
